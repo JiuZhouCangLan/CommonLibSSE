@@ -41,6 +41,11 @@ namespace RE
 			inline constexpr REL::ID Update3DModel(static_cast<std::uint64_t>(39395));
 		}
 
+		namespace BaseExtraList
+		{
+			inline constexpr REL::ID Dtor(static_cast<std::uint64_t>(11572));
+		}
+
 		namespace BGSFootstepManager
 		{
 			inline constexpr REL::ID Singleton(static_cast<std::uint64_t>(403553));

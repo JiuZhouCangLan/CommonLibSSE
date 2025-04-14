@@ -33,6 +33,13 @@ namespace RE
 		free(presence);
 		presence = nullptr;
 	}
+#else
+	BaseExtraList::~BaseExtraList()
+	{
+		using func_t = void (*)(BaseExtraList*);
+		REL::Relocation<func_t> func{ Offset::BaseExtraList::Dtor };
+		func(this);
+	}
 #endif
 
 	bool BaseExtraList::PresenceBitfield::HasType(std::uint32_t a_type) const
