@@ -9,6 +9,13 @@ namespace RE
 		return func(this, a_form);
 	}
 
+	void BGSListForm::RemoveAddedForm(TESForm* a_form)
+	{
+		using func_t = decltype(&BGSListForm::RemoveAddedForm);
+		static REL::Relocation<func_t> func{ Offset::BGSListForm::RemoveAddedForm };
+		func(this, a_form);
+	}
+
 	bool BGSListForm::ContainsOnlyType(FormType a_formType) const
 	{
 		bool result = true;

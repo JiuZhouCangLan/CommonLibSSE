@@ -54,6 +54,7 @@ namespace RE
 		namespace BGSListForm
 		{
 			inline constexpr REL::ID AddForm(static_cast<std::uint64_t>(20913));
+			inline constexpr REL::ID RemoveAddedForm(static_cast<std::uint64_t>(20914));
 		}
 
 		namespace BGSSaveLoadManager
@@ -635,6 +636,7 @@ namespace RE
 		namespace BGSListForm
 		{
 			inline constexpr REL::ID AddForm(static_cast<std::uint64_t>(20470));
+			inline constexpr REL::ID RemoveAddedForm(static_cast<std::uint64_t>(20471));
 		}
 
 		namespace BGSSaveLoadManager
